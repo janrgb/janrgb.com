@@ -1,4 +1,4 @@
-/* PRECONDITIONS. */
+/* INCLUSIONS. */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -327,27 +327,7 @@ template {
   display: none;
 }
 
-:root {
-  font-size: calc(1rem + 0.5vw);
-  font-family: "Inter", sans-serif;
-  font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
-}
-
-@supports (font-variation-settings: normal) {
-  :root {
-    font-family: InterVariable, sans-serif;
-  }
-}
-html {
-  background-color: #F9F8F9;
-}
-
-body {
-  font-size: 100%;
-  font-family: "Inter", sans-serif;
-  color: #333;
-}
-
+/********** NAV **********/
 nav {
   display: flex;
   flex-direction: row;
@@ -357,6 +337,7 @@ nav {
   padding: 1rem;
 }
 
+/********** LOGO **********/
 nav .logo {
   display: flex;
   align-items: center;
@@ -382,6 +363,7 @@ nav .logo .blue {
   color: #0000FF;
 }
 
+/********** LINKS **********/
 nav .links {
   display: flex;
   flex-direction: row;
@@ -398,6 +380,141 @@ nav .links a {
 
 nav .links a:hover {
   text-decoration: underline;
+}
+
+/********** FOOTER **********/
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #FFFFFF;
+  padding: 1rem;
+}
+
+footer .footer-vector {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+footer .footer-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  color: #000000;
+  opacity: 0.32;
+}
+
+footer .footer-content p {
+  padding: 0;
+  margin: 0;
+}
+
+/********** HOMEPAGE **********/
+.homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  height: 100%;
+  gap: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/********** WELCOME-MAT **********/
+.homepage .welcome-mat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.homepage .welcome-mat * {
+  padding: 0;
+  margin: 0;
+}
+
+.homepage .welcome-mat h4 {
+  font-style: italic;
+  font-weight: lighter;
+}
+
+/********** SOCIALS **********/
+.homepage .socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.homepage .socials a {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  color: #000000;
+  transition: 0.2s ease;
+}
+
+.homepage .socials a:hover {
+  color: #0077b5;
+}
+
+.homepage .socials a svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  fill: currentcolor;
+}
+
+:root {
+  font-size: calc(1rem + 0.5vw);
+  font-family: "Inter", sans-serif;
+  font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #F9F8F9;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-size: 100%;
+  font-family: "Inter", sans-serif;
+  color: #333;
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrapper .main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 /*# sourceMappingURL=main.css.map */

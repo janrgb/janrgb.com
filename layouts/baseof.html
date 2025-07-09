@@ -2,10 +2,12 @@
 <html>
     {{- partial "head.html" . -}}
     <body>
-        {{- partialCached "header.html" . -}}
-        <div id="content">
-            {{- block "main" . }}{{- end }}
+        <div class="wrapper">
+            {{- partialCached "header.html" . -}}
+            <div class="main">
+                {{- block "main" . }}{{- end }}
+            </div>
+            {{- partialCached "footer.html" . -}}
         </div>
-        {{- partialCached "footer.html" . -}}
     </body>
 </html>

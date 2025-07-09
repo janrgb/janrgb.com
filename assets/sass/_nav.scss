@@ -1,0 +1,83 @@
+@use "sizing";
+
+/********** NAV **********/
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: sizing.$space-3;
+}
+
+/********** LOGO **********/
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.01rem;
+}
+
+nav .logo span {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+nav .logo .red   { color: #FF0000; }
+nav .logo .green { color: #00FF00; }
+nav .logo .blue  { color: #0000FF; }
+
+/********** LINKS **********/
+
+nav .links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav .links a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+nav .links a:hover {
+    text-decoration: underline;
+}
+
+/********** FOOTER **********/
+
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;;
+    background-color: #FFFFFF;
+    padding: sizing.$space-3;
+}
+
+footer .footer-vector {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    color: #000000;
+    opacity: .32;
+}
+
+footer .footer-content p {
+    padding: 0;
+    margin: 0;
+}
