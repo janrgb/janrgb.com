@@ -1,0 +1,1 @@
+@use "sass/normalize2";body{font-size:100%;font-family:arial,sans-serif;color:#333}

@@ -1,0 +1,69 @@
+/* PRECONDITIONS. */
+@use 'normalize';
+@use 'sizing';
+
+$primary-color: #333;
+$font-stack: 'Inter', sans-serif;
+
+:root {
+  font-size: calc(1rem + 0.5vw);
+  font-family: $font-stack;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+}
+@supports (font-variation-settings: normal) {
+  :root { font-family: InterVariable, sans-serif; }
+}
+
+html {
+    background-color: #F9F8F9
+}
+
+body {
+    font-size: 100%;
+    font-family: $font-stack;
+    color: $primary-color;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: sizing.$space-3;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.01rem;
+}
+
+nav .logo span {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+nav .logo .red   { color: #FF0000; }
+nav .logo .green { color: #00FF00; }
+nav .logo .blue  { color: #0000FF; }
+
+nav .links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav .links a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+nav .links a:hover {
+    text-decoration: underline;
+}
