@@ -1,0 +1,84 @@
+@use "sizing";
+
+/********** BLOGPAGE **********/
+
+.blogpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: sizing.$space-4;
+    text-align: left;
+    width: 100%;
+    padding: sizing.$space-5 sizing.$space-6;
+}
+
+.blogpage h1 {
+    padding: 0;
+    margin: 0;
+}
+
+/********** POST-CONTAINER **********/
+
+.blogpage .post-container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inconsolata';
+    gap: sizing.$space-4;
+    flex-wrap: wrap;
+}
+
+.blogpage .post-container .post-group {
+    display: flex;
+    flex-direction: column;
+    gap: sizing.$space-3;
+    flex-wrap: wrap;
+}
+
+/********** POST-GROUP **********/
+
+.blogpage .post-container .post-group * {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.blogpage .post-container .post-group .post-year {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.blogpage .post-container .post-group .post-items {
+    display: flex;
+    flex-direction: column;
+    gap: sizing.$space-3;
+    flex-wrap: wrap;
+}
+
+.blogpage .post-container .post-group .post-items .post-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid thin gray;
+    color: #000000;
+    transition: 0.2s ease;
+}
+
+.blogpage .post-container .post-group .post-items .post-text p {
+    font-size: 0.6em;
+    font-weight: bolder;
+    color: gray;
+    opacity: 50%;
+}
+
+.blogpage .post-container .post-group .post-items .post-text * {
+    transition: 0.2s
+}
+
+.blogpage .post-container .post-group .post-items .post-text:hover * {
+    color: #0077b5;
+}

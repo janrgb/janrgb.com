@@ -2,8 +2,9 @@
 @use 'normalize';
 @use 'nav';
 @use 'homepage';
+@use 'blogpage';
 
-$primary-color: #333;
+$primary-color: #000;
 $font-stack: 'Inter', sans-serif;
 
 :root {
@@ -42,6 +43,7 @@ body {
 .wrapper .main {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     flex-grow: 1;
 }

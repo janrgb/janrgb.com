@@ -1,3 +1,6 @@
 baseURL = 'http://janrgb.com/'
 languageCode = 'en-us'
-title = 'Overridden'
+title = 'janrgb.'
+
+[taxonomies]
+tag = 'tags'
