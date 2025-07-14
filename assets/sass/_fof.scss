@@ -1,0 +1,16 @@
+@use 'sizing';
+
+/********** FOFPAGE **********/
+
+.fofpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: sizing.$space-3;
+}
+
+.fofpage * {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}

@@ -5,6 +5,7 @@
             {{ range .Pages }}
                 <a href="{{ .RelPermalink }}" class="term-text">
                     <h4>{{ .LinkTitle }}</h4>
+                    <p>{{ time.Format "Jan 2" .PublishDate }}</p>
                 </a>
             {{ end }}
         </div>

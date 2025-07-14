@@ -348,6 +348,8 @@ nav .logo {
   display: flex;
   align-items: center;
   gap: 0.01rem;
+  text-decoration: none;
+  color: #000000;
 }
 
 nav .logo span {
@@ -528,6 +530,16 @@ footer .footer-content p {
   flex-wrap: wrap;
 }
 
+.blogpage .post-container .post-group .post-year a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.2s ease;
+}
+
+.blogpage .post-container .post-group .post-year a:hover {
+  color: #0077b5;
+}
+
 .blogpage .post-container .post-group .post-items {
   display: flex;
   flex-direction: column;
@@ -558,6 +570,79 @@ footer .footer-content p {
 
 .blogpage .post-container .post-group .post-items .post-text:hover * {
   color: #0077b5;
+}
+
+/********** TAXPAGE **********/
+.taxpage {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 4rem;
+  text-align: left;
+  width: 100%;
+  padding: 4rem 8rem;
+}
+
+.taxpage h1 {
+  padding: 0;
+  margin: 0;
+}
+
+/********** TERM-CONTAINER **********/
+.taxpage .term-container {
+  display: flex;
+  flex-direction: column;
+  font-family: "Inconsolata";
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.taxpage .term-container * {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  opacity: 70%;
+}
+
+.taxpage .term-container .term-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.taxpage .term-container .term-text {
+  border-bottom: solid thin gray;
+  color: #000000;
+  transition: 0.2s ease;
+}
+
+.taxpage .term-container .term-text:hover {
+  color: #0077b5;
+}
+
+.taxpage .term-container .term-text p {
+  font-size: 0.6em;
+  font-weight: bolder;
+  color: gray;
+  opacity: 50%;
+}
+
+/********** FOFPAGE **********/
+.fofpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.fofpage * {
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
 
 :root {

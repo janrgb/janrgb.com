@@ -1,0 +1,61 @@
+@use 'sizing';
+
+/********** TAXPAGE **********/
+.taxpage {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: sizing.$space-5;
+    text-align: left;
+    width: 100%;
+    padding: sizing.$space-5 sizing.$space-6;
+}
+
+.taxpage  h1 {
+    padding: 0;
+    margin: 0;
+}
+
+/********** TERM-CONTAINER **********/
+
+.taxpage .term-container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inconsolata';
+    gap: sizing.$space-3;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.taxpage .term-container * {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    opacity: 70%;
+}
+
+.taxpage .term-container .term-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.taxpage .term-container .term-text {
+    border-bottom: solid thin gray;
+    color: #000000;
+    transition: 0.2s ease;
+}
+
+.taxpage .term-container .term-text:hover {
+    color: #0077b5;
+}
+
+.taxpage .term-container .term-text p {
+    font-size: 0.6em;
+    font-weight: bolder;
+    color: gray;
+    opacity: 50%;
+}

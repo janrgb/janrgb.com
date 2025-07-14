@@ -5,7 +5,7 @@
             {{ range .Pages.GroupByDate "2006" }}
                 <div class="post-group">
                     <div class="post-year">
-                        <h1>{{ .Key }}</h1>
+                        <a href="/years"><h1>{{ .Key }}</h1></a>
                         <svg width="50" height="11" viewBox="0 0 50 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10 5.5C10 8.26142 7.76142 10.5 5 10.5C2.23858 10.5 0 8.26142 0 5.5C0 2.73858 2.23858 0.5 5 0.5C7.76142 0.5 10 2.73858 10 5.5Z" fill="#FF0000"/>
                             <path d="M30 5.5C30 8.26142 27.7614 10.5 25 10.5C22.2386 10.5 20 8.26142 20 5.5C20 2.73858 22.2386 0.5 25 0.5C27.7614 0.5 30 2.73858 30 5.5Z" fill="#00FF00"/>

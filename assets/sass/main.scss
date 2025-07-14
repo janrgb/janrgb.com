@@ -3,6 +3,8 @@
 @use 'nav';
 @use 'homepage';
 @use 'blogpage';
+@use 'taxonomy';
+@use 'fof';
 
 $primary-color: #000;
 $font-stack: 'Inter', sans-serif;
